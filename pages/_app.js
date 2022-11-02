@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import Home from './home'
 
 function MyApp({ Component, pageProps }) {
   const { asPath, isReady } = useRouter()
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
+      <Home />
     </>
   )
 }

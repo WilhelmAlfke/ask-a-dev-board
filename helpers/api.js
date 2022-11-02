@@ -66,7 +66,7 @@ const hostname = 'https://www.ask-a.dev'
 
 function fetcher(url) {
   if (!url) return
-
+  //console.log(hostname + url)
   return fetch(hostname + url).then((res) => res.json())
 }
 
@@ -111,4 +111,5 @@ export {
   sendQuestion,
   sendAnswer,
   closeQuestion,
+  getQuestions,
 }
